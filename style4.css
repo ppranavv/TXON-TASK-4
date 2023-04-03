@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+.portfolio{
+    position: absolute;
+    left: 55px;
+    top: 14px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding: 8px 28px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    border-radius: 6px;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("1.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right:3%;
+}
+.headings{
+    font-family: 'Bree Serif', serif; 
+    font-size: 45px;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white,0 0 15px white;
+    font-weight: bolder;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: rgb(129, 123, 123);
+    color: white;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 500px;
+    height: 450px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#about h1{
+    font-size: 50px;
+    }
+#intro h2{
+    font-size: 35px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-family:'Times New Roman', Times, serif
+}
+#intro h3{
+    margin: 5px 20px 30px 12px;
+    font-size: 25px;
+    color: blue;
+}
+.details{
+    margin: 5px 15px;
+    font-size: 22px;
+    font-style: italic;
+}
+#skills{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 459px;
+    border: 1px solid black;
+    margin: 4px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px black;
+    border: solid black;
+}
+.box p{
+    font-size: 18px;
+}
+.box img{
+    margin-top: .5px;
+    width: 344px;
+    height: 187px;
+    border-radius: 14px 14px 0 0 ;
+}
+#abc{
+    width: 345px;
+    height: 170px;
+    border-radius: 15px 15px 0 0 ;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 50%;
+    border: none;
+    outline: none;
+}
+.text{
+    width: 20%;
+    padding: 5px;
+    margin: 6px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+.email{
+    width: 20%;
+    padding: 5px;
+    margin: 6px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+#send{
+    width: 10%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    box-shadow: 0 0 10px white;
+}
